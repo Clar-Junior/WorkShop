@@ -1,0 +1,32 @@
+.cidade {
+    background-color: tomato;
+    color: white;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+}
+
+.norte {
+    text-align: center;
+}
+
+.nota {
+    font-size: 120%;
+    color: blueviolet;
+}
+
+h1 {
+    border: 2px solid tomato;
+    background-color: black;
+    color: white;
+}
+#Paris, #London, #Tokyo {
+    color: rgb(116, 178, 218);
+}
+
+#myHeader {
+    background-color: lightblue;
+    color: black;
+    padding: 40px;
+    text-align: center;
+}

@@ -1,0 +1,109 @@
+/*
+{
+    box-sizing: border-box;
+}
+
+.left 
+{
+    background-color: aqua;
+    padding: 20px;
+    float: left;
+    width: 33%;
+    tamanho em 20%, por padrão
+}
+
+.right 
+{
+    background-color: rgb(172, 117, 224);
+    padding: 20px;
+    float: left;
+    width: 33%;
+    tamanho em 20%, por padrão
+}
+
+.main 
+{
+    background-color: #a76969;
+    padding: 20px;
+    float: left;
+    width: 33%;
+    height: 90px;
+    tamanho em 60%, por padrão
+}
+
+@media screen and (max-width: 800px) 
+{
+    .left, .main, .right 
+    {
+        width: 100%;
+        tamanho em 100%, quando a Viewport tiver 600px ou menos
+    }
+}
+*/
+* {
+    box-sizing: border-box;
+}
+
+.tudo {
+    overflow: auto;
+}
+
+.topo {
+    border: solid 0px black;
+    background-color: lightgray;
+    width: 100%;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 5px;
+    text-align: center;
+    color: grey;
+    font-family: Fira Code;
+    font-size: 3vh;
+    display: block;
+}
+#link1, #link2, #link3, #link4 {
+    background-color: lightgray;
+    width: 20%;
+    padding: 2px;
+    color: #000000;
+    font-family: Fira Code;
+    margin: 7px;    
+    font-size: 1.5vh;
+    display: block;
+    }
+    
+.left {
+    float: left;
+    width: 30%;
+    text-align: center;
+}
+
+.main  {
+    float: left;    
+    padding: 15px;    
+    width: 40%;
+    
+}
+.right {
+        float: left;
+        padding: 15px;
+        margin-top: 7px;
+        background-color: lightgray;
+        text-align: center;
+        font-family: Fira Code;
+        float: left;
+        width: 30%;
+}
+.foot {
+    background-color: lightgray;
+    text-align: center;
+    padding: 10px;
+    margin-top: 7px;
+}
+
+@media only screen and (max-width: 620px) {
+    /*para dispositivos móveis*/
+    .menu, .main, .right {
+        width: 100%;
+    }
+}

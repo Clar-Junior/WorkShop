@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style8.css">
+</head>
+<body>
+    <button onclick="document.location='setima_pagina.html'">Página Anterior</button>
+    <button onclick="document.location='nona_pagina.html'">Próxima Pagina</button>
+    
+    <ul style="list-style-type: none; margin: 0; padding:0; overflow:hidden; background-color: #333333;">
+        <li style="float:left;display: inline-flex; color: white; text-align:center; padding: 0px; text-decoration: none;"><a href="#home" style="float:left;display: inline-flex; color: white; text-align:center; padding: 16px; text-decoration: none;">Home</a></li>
+        <li style="float:left;display: inline-flex; color: white; text-align:center; padding: 0px; text-decoration: none;"><a href="#news" style="float:left;display: inline-flex; color: white; text-align:center; padding: 16px; text-decoration: none;">News</a></li>
+        <li style="float:left;display: inline-flex; color: white; text-align:center; padding: 0px; text-decoration: none;"><a href="#contact" style="float:left;display: inline-flex; color: white; text-align:center; padding: 16px; text-decoration: none;">contact</a></li>
+        <li style="float:left;display: inline-flex; color: white; text-align:center; padding: 0px; text-decoration: none;"><a href="#about" style="float:left;display: inline-flex; color: white; text-align:center; padding: 16px; text-decoration: none;">about</a></li>
+    </ul>
+    
+    <br>
+    <br>
+
+    <h1>HTML JavaScript</h1>
+        <p>O JavaScript torna  as páginas HTML mais dinâmicas e interativas!</p>
+        <br>
+        <h3>Exemplo</h3>
+        <button type="button" onclick="document.getElementById('teste').innerHTML = Date()">
+            Clique para mostrar a data e a hora.
+        </button>
+        <p id="teste"></p>
+
+
+        <p id="demo"></p>
+        <img src="" alt="">
+        <script>
+            document.getElementById("demo").innerHTML = "Hello in JavaScript!";
+            document.getElementById("demo").style.fontSize= "20px";
+            document.getElementById("demo").style.color = "red";
+            document.getElementById("demo").style.backgroundColor = "yellow";
+            document.getElementById("demo").style.border = "2px solid black";
+        </script>
+        <noscript>Desculpe, seu  browser não suporta JavaScript</noscript>
+
+        <br>
+        <br>
+        <h2>Primeira interação JavaScript</h2>
+        <p>JavaScript pode mudar o valor do atributo src(source) de uma imagem.</p>
+
+
+        <!--JavaScript pode alterar atributos:-->
+        <script>
+            function smile(sw) {
+                var pic;
+                if (sw == 0) {
+                    pic  = "Images/angry.png"
+                } else {
+                    pic = "Images/happy.png"
+                }
+                document.getElementById('myImage').src = pic;
+            }
+        </script>
+        <noscript>Desculpe, seu browser não suporta JavaScript</noscript>
+
+        <img id="myImage" src="Images/angry.png" alt="emoticon" width="100" height="100">
+        <p>
+            <button type="button" onclick="smile(0)">zangado</button>
+            <button type="button" onclick="smile(1)">feliz</button>
+        </p>
+
+        <h3>Exemplos de caminho de arquivo</h3>
+        <table>
+            <colgroup>
+                <col span="1" style="background: rgba(0, 0, 0, 0.800);">
+                <col span="1" style="background: rgba(0, 0, 0, 0.800);">
+            </colgroup>
+
+            <th>caminho</th>
+            <th>descrição</th>
+
+            <tr>
+                <td> - img src="picture.jpg" - </td>
+                <td>O arquivo "picture.jpg" está localizado na mesma pasta da página atual</td>
+            </tr>
+            <tr>
+                <td> -img src="images/picture.jpg" - </td>
+                <td>O arquivo "picture.jpg" está localizado na pasta de imagens na pasta atual</td>
+            </tr>
+            <tr>
+                <td> - img src="/images/picture.jpg" - </td>
+                <td>O arquivo "picture.jpg" está localizado na pasta de imagens na raiz da web atual</td>
+            </tr>
+            <tr>
+                <td> - img src="../picture.jpg" - </td>
+                <td>O arquivo "picture.jpg" está localizado na pasta um nível acima da pasta atual</td>
+            </tr>
+        </table>
+
+        <p>
+            Os caminhos de arquivo são usados ​​ao vincular a arquivos externos, como:
+                <ul>
+                    <li>paginas web</li>
+                    <li>Imagens</li>
+                    <li>folhas de estilo</li>
+                    <li>JavaScript</li>
+            </ul>               
+        </p>
+        <h3>Caminhos absolutos e relativos</h3>
+        <p>
+            absoluto  = img src="https://www.w3schools.com/images/picture.jpg" alt="Mountain"
+            <br>
+            relativo = img src="/images/picture.jpg" alt="Mountain"
+        </p>
+        <p>
+            É uma prática recomendada usar caminhos de arquivo relativos (se possível).
+        </p>
+
+        <br>
+        <h1>HTML-  O elemento Head</h1>
+        <p>
+            O elemento 'head' é um contêiner para metadados (dados sobre dados) e é colocado entre a tag 'html' e a tag 'body'.
+                <br>
+            Os metadados HTML são dados sobre o documento HTML. Os metadados não são exibidos.
+            <br>
+            Os metadados geralmente definem o título do documento, conjunto de caracteres, estilos, scripts e outras metainformações.
+        </p>
+        <h3>Elemento Title</h3>
+        <p>
+            O elemento 'title':
+            <ul>
+                <li>define um título na barra de ferramentas do navegador</li>
+                <li>fornece um título para a página quando ela é adicionada aos favoritos</li>
+                <li>exibe um título para a página nos resultados do mecanismo de pesquisa</li>
+            </ul>
+        </p>
+
+        <h3>Elemento Style</h3>
+        <p>O elemento 'style' é usado para definir informações de estilo para uma única página HTML</p>
+
+        <h3>Elemento Link</h3>
+        <p>
+            O elemento 'link' define a relação entre o documento atual e um recurso externo.
+            A tag 'link' é usada com mais frequência para vincular a folhas de estilo externas:
+            <br>
+            Exemplo:
+            <br>
+            "link rel="styesheet" href="mystyle.css""
+        </p>
+
+        <h3>Elemento Meta</h3>
+        <p>
+            O elemento 'meta' normalmente é usado para especificar o conjunto de caracteres, a descrição da página, as palavras-chave, o autor do documento e as configurações da janela de visualização.
+            Os metadados não serão exibidos na página, mas são usados ​​pelos navegadores (como exibir o conteúdo ou recarregar a página), pelos mecanismos de pesquisa (palavras-chave) e outros serviços da web.
+           <br>
+           <img src="/Images/Exemplo.png" alt="Tag Meta" width="500" height="500"><!--não entendo por que não aparece-->
+
+        </p>
+
+        <h3>Elemento base</h3>
+        <p>
+            O elemento 'base' especifica a URL base e/ou destino para todas as URLs relativas em uma página.
+            A tag 'base' deve ter um href ou um atributo de destino presente, ou ambos.
+            <br>
+            Só pode haver um único 'base' elemento em um documento!
+        </p>
+
+        <address>
+            Fonte: <a href="https://www.w3schools.com/html/html_head.asp" target="_blank">W3schools</a>
+        </address>        
+
+
+</body>
+</html>

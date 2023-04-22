@@ -1,0 +1,73 @@
+body {
+    background-color: rgba(0, 0, 0, 0.800);
+    color: rgb(90, 150, 202);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    
+}
+
+* {
+    box-sizing: border-box;
+    color: rgb(90, 150, 202);
+}
+
+h2 {
+    font-weight: 900;
+}
+ /*Cabeçalho*/
+ header {
+    background-color: rgba(102, 102, 102, 0.692);
+    padding: 30px;
+    text-align: center;
+    font-size: 40px;
+    /*color: #fff;*/ /*alterado em *  para azul */
+
+ }
+
+ /*Container para flexboxes*/
+ section {
+    display: -webkit-flex;
+    display: flex;
+ }
+
+ /*menu de navegação*/
+ nav {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background: rgba(204, 204, 204, 0.397);
+    padding: 20px;
+    
+ }
+    
+
+ /*lista dentro do menu*/
+ nav ul {
+    list-style-type: none;
+    padding: 0;
+ }
+
+ /*conteúdo*/
+ article {
+    -webkit-flex:3;
+    -ms-flex:3;
+    flex: 3;
+    background-color: #f1f1f1;
+    padding: 10px;
+ }
+
+ /*rodapé/footer*/
+ footer {
+    background-color: rgba(119, 119, 119, 0.671);
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+ }
+
+ /*Layour responsivo - faz o menu e o conteúdo (dentro da section) ficar por cima um do outro ao invés de ao lado*/
+ @media (max-width:600px) {
+    section{
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
+ }

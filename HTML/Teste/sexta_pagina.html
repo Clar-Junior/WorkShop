@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blocos HTML</title>
+    <link rel="stylesheet" href="style6.css">
+</head>
+
+<body>
+    <button onclick="document.location='quinta_pagina.html'">Página Anterior</button>
+    <button onclick="document.location='setima_pagina.html'">Próxima Página</button>
+
+    
+    <!--
+        Um elemento de nível de bloco sempre começa em uma nova linha e os navegadores adicionam automaticamente algum espaço (uma margem) antes e depois do elemento.
+        Um elemento de nível de bloco sempre ocupa toda a largura disponível (estende-se para a esquerda e para a direita o máximo possível).
+        Dois elementos de bloco comumente usados ​​são: <p> e <div>.
+        O <p>elemento define um parágrafo em um documento HTML.
+        O <div>elemento define uma divisão ou uma seção em um documento HTML.
+            <w3schools>
+
+            Aqui estão os elementos de nível de bloco em HTML:
+                <address>
+                <article>
+                <aside>
+                <blockquote>
+                <canvas>
+                <dd><dl><dt>
+                <div>
+                <fieldset>
+                <figcaption>
+                <figure>
+                <footer>
+                <form>
+                <h1>-<h6>
+                <header>
+                <hr>
+                <li>-<ol>-<ul>
+                <main>
+                <nav>
+                <noscript>
+                <p>
+                <pre>
+                <section>
+                <table>
+                <tfoot>
+                <video>
+    -->
+
+    <h1>Tag span</h1>
+        <p>
+            O <span>elemento é um <strong>contêiner</strong> embutido usado para marcar uma parte de um texto ou uma parte de um documento.
+            O <span>elemento não tem atributos obrigatórios, mas style, classe idsão comuns.
+            Quando usado junto com CSS, o <span>elemento pode ser usado para estilizar partes do texto:
+        </p>
+           
+    <p>This is an inline span <span style="border: 1px solid black;color: rgb(99, 107, 219);font-weight: bold;">Hello World</span> element inside a paragraph.</p>
+
+    <br>
+    <br>
+
+    <h1>Tag Div</h1>
+        <p>
+            O elemento Div geralmente é usado como um contêiner para outros elementos HTML.
+            O elemento Div não tem atributos obrigatórios, mas style, classe idsão comuns.
+            Quando usado junto com CSS, o elemento Div pode ser usado para estilizar blocos de conteúdo:
+        </p>
+        
+    <div style="background-color: aqua;color: black;padding: 20px;border: 1px solid black;">
+        <h2>Brasília</h2>
+        <p>Brasília é a capital federal do Brasil. É uma das cidades mais populosas do país, com cerca de 2,5 milhões de habitantes.</p>
+    </div>
+    
+    <br>
+    <br>
+
+    <h1>Tag Class</h1>
+        <p>
+            O atributo HTML classé usado para especificar uma classe para um elemento HTML.
+            Vários elementos HTML podem compartilhar a mesma classe.
+        </p>
+        <h2>Usando o atributo class</h2>
+        <p>
+            O atributo class geralmente é usado para apontar para um nome de classe em uma folha de estilo. Também pode ser usado por JavaScript para acessar e manipular elementos com o nome de classe específico.
+            No exemplo a seguir temos três div elementos com um atributo class com o valor "cidade". Todos os três elementos div serão estilizados igualmente de acordo com a definição de estilo .cidade na seção head:
+        </p>
+        <p>
+            <b>Dica:</b> O classatributo pode ser usado em qualquer elemento HTML.
+            <br>
+            <b>Observação:</b> o nome da classe diferencia maiúsculas de minúsculas!
+        </p>
+        <div class="cidade norte"><!--2 classes separadas por espaço-->
+            <h3>Palmas</h3>
+            <p>Palmas é a capital do Estado do Tocantins.</p>
+        </div>
+
+        <div class="cidade">
+            <h3>Goiânia</h3>
+            <p>Goiânia é a capital do Estado de Goiás.</p>
+        </div>
+
+        <div class="cidade">
+            <h3>Belém</h3>
+            <p>Belém é a capital do Estado do Pará.</p>
+        </div>
+
+        <br>
+        <p>Elementos span com um atributo class</p>
+        <h3>Meu cabeçalho <span class="nota">importante</span></h3>
+        <p>Esse é um texto <span class="nota">importante.</span></p>
+    
+    <br>
+    <br>
+
+    <h2>Use of The class Attribute in JavaScript</h2>
+        <p>Click the button to hide all elements with class name "city":</p>
+
+        <button onclick="myFunction()">Hide elements</button>
+
+    <h2 id="London" class="city">London</h2>
+        <p>London is the capital of England.</p>
+
+    <h2 id="Paris" class="city">Paris</h2>
+        <p>Paris is the capital of France.</p>
+
+    <h2 id="Tokyo" class="city">Tokyo</h2>
+        <p>Tokyo is the capital of Japan.</p>
+
+    <script>
+        function myFunction() {
+        var x = document.getElementsByClassName("city");
+        for (var i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        }
+    </script>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h2 id="idTag">Atributo de identificação - id-  HTML</h2><!--tag id linkada na sétima página-->
+        <p>
+            O atributo HTML id é usado para especificar um id exclusivo para um elemento HTML.
+            <br>
+            Você não pode ter mais de um elemento com o mesmo id em um documento HTML.
+        </p>
+
+        <h1 id="myHeader">Meu cabeçalho</h1>
+
+        <p>
+            <b>Observação:</b> o nome do id diferencia maiúsculas de minúsculas!
+            <br>
+            <b>Nota:</b> O nome id deve conter pelo menos um caractere, não pode começar com um número e não deve conter espaços em branco (espaços, tabulações, etc.).
+        </p>
+
+    <br>
+    <br>
+    <h2>Diferença entre classe e ID</h2>
+        <p>
+            Um nome de classe pode ser usado por vários elementos HTML, enquanto um nome id deve ser usado apenas por um elemento HTML dentro da página:
+        </p>
+
+</body>
+</html>

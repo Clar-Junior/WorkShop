@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terceira_pagina</title>
+    <link rel="icon" type="image/png" size="32" href="/Images/globo32.png">
+    <link rel="stylesheet" href="style3.css">
+    
+</head>
+<body>
+    
+        <button onclick="document.location='primeira_pagina.html'">Página Anterior</button>
+        <button onclick="document.location='quarta_pagina.html'">Próxima Página</button>
+        
+        
+    <h2>Elemento picture</h2>
+    <picture>
+        <source media="(min-width: 100px)" srcset="images\gray.jpg">
+        <source media="(min-width: 200px)" srcset="images\blue.jpg">
+        <img src="Images/white.jpg" alt="Minimalist" style="width: 250px; height: 250px;">
+    </picture>
+    <br>
+        <a target="_blank" href="https://icons8.com/icon/64242/fita-de-bookmark">Fita de Bookmark</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+    <br>
+    <br>
+    <br>
+
+    <h2>Elemento Table</h2>
+    <table>
+        <caption>Informações</caption>
+        <tr>
+            <th colspan="2">Nome</th> <!--células de cabeçalho começam com a tag <th> - table head(th) -->
+            <th>País</th>
+        </tr>
+        <tr><!--cada linha da tabela começo com a tag <tr> - table row(tr) significa linha da tabela-->
+            <td>João</td>
+            <td>Mountain</td>
+            <td>Noruega</td>
+        </tr>
+        <tr>
+            <td>Fabiana </td> <!--Cada célula da tabela é definida pela tag <td> - table data significa dados da tabela - tudo entre essa tag é o conteúdoda célulo-->
+            <td>Araújo</td>
+            <td>Brasileira</td>
+            <!--Uma célula de tabela pode conter todos os tipos de elementos html: texto, imagens, lista, links, outras tabelas, etc.-->
+        </tr>
+    </table>
+    <br>
+
+    <table>
+        <caption>Dados pessoais</caption>
+        <tr>
+            <th>Nome</th>
+            <th>Sexo</th>
+            <th>idade</th>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>F</td>
+            <td>36</td>
+        </tr>
+        <tr>
+            <td>João</td>
+            <td>M</td>
+            <td>42</td>
+        </tr>
+    </table>
+    <br>
+
+    
+    <table>
+        <caption>Economia Mensal</caption>
+        <th >Mês</th>
+        <th >Economizado</th>
+        <tr ">
+            <td>Jan</td>
+            <td>R$200,00</td>
+        </tr>
+        <tr>
+            <td>Fev</td>
+            <td>R$350,00</td>
+        </tr>
+    </table>
+
+    <table>
+        <caption>Rowspan</caption>
+        <tr>
+            <th>nome</th>
+            <td>Junior</td>
+        </tr>
+        <tr>
+            <th rowspan="3">e-mail</th> <!-- célula abrange várias linhas-->
+            <td>132132@alsk.com</td>
+        </tr>
+        <tr>
+            <td>sdfasd@324354.com</td>
+        </tr>
+        <tr>
+            <td>dev.code@media.com</td>
+        </tr>
+    </table>
+    
+</body>
+</html>

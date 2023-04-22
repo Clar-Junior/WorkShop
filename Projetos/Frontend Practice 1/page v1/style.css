@@ -1,0 +1,158 @@
+/*navegação*/
+.navigation{
+    border: 3px solid red;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;     
+    background-color: black;    
+}
+
+.topbar_inner {
+    display: flex;
+    width: 100%;
+    border: 2px solid black;
+    justify-content: space-between;
+    margin: 0 15px;
+    font-family: 'GT America Standard', sans-serif;
+    color: white;
+}
+#right{
+    display: flex;
+    align-items: center;
+    /*border: 3px solid rgb(10, 189, 90);*/
+    width: 50%;
+    height: 50px;
+    padding: 0 15px;
+    justify-content: flex-end;
+    
+}
+
+#left {
+    /*border:  3px solid turquoise;*/
+    display: flex;
+    width: 50%;
+    height: 50px;
+    padding: 0 15px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+h3, button {
+    font-size: 24px;   
+}
+h3, img, button {
+    padding: 4px;
+}
+button {
+    border-radius: 12px;
+    border: 1px solid white;
+    color: inherit;
+    background-color: inherit;
+    padding: 10px 10px;
+    margin: 5px;
+    
+}
+
+
+
+/*site-search*/
+.search {
+    border: 4px solid rgb(218, 59, 138);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 300px;
+    font-family: 'GT America Standard', sans-serif;
+    background-color:#DADBF1;
+   
+}
+.title_search{
+    /*border: 2px solid rebeccapurple;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    height: 50%;
+    
+
+    
+}
+
+.search_input{
+    /*border: 2px solid rgb(224, 226, 68);*/
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 50%;
+    
+}
+label {
+    display: flex;
+    flex-direction: row nowrap;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input,
+lable {
+    margin: 0.4rem 0;
+}
+
+
+
+/*corpo do site*/
+
+.list {
+    display: block;
+    padding-right: 15px;
+    padding-left: 15px;    
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 4px solid green;
+}
+.branches{
+    border: 2px solid orange;
+    display: flex;
+    flex-flow: column;
+     
+    
+}
+.account{
+    border: 2px solid orange;
+    display: flex;
+    flex-flow: column;
+}
+.organizations{
+    border: 2px solid orange;
+    display: flex;
+    flex-flow: column;
+}
+.billing{
+    border: 2px solid orange;
+    display: flex;
+    flex-flow: column;
+}
+.authenticate{
+    border: 2px solid orange;
+    display: flex;
+    flex-flow: column;
+}
+.support{
+    border: 2px solid orange;
+    display: flex;
+    flex-flow: column;
+}
+
+
+
+
+/*rodapé*/
+.footer{
+    list-style-type: none;
+}
+.col {
+    border: 2px solid purple;
+    display: flex;
+    
+}

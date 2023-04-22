@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas HTML</title>
+    <link rel="stylesheet" href="style5.css">
+</head>
+<body>
+    <button onclick="document.location='quarta_pagina.html'">Página Anterior</button>
+    <button onclick="document.location='sexta_pagina.html'">Próxima Página</button>
+
+    <h2>Listas HTML</h2>
+    <!--Uma lista não ordenada começa com a <ul>tag. Cada item da lista começa com a <li>tag.-->
+    <p>Nesse exemplo, usamos CSS para estilizar uma lista horizontalmente para criar um menu de  navegação.</p>
+
+    <ul style="list-style-type: none; margin: 0; padding:0; overflow:hidden; background-color: #333333;">
+        <li style="float:left;display: inline-flex; color: white; text-align:center; padding: 0px; text-decoration: none;"><a href="#home" style="float:left;display: inline-flex; color: white; text-align:center; padding: 16px; text-decoration: none;">Home</a></li>
+        <li style="float:left;display: inline-flex; color: white; text-align:center; padding: 0px; text-decoration: none;"><a href="#news" style="float:left;display: inline-flex; color: white; text-align:center; padding: 16px; text-decoration: none;">News</a></li>
+        <li style="float:left;display: inline-flex; color: white; text-align:center; padding: 0px; text-decoration: none;"><a href="#contact" style="float:left;display: inline-flex; color: white; text-align:center; padding: 16px; text-decoration: none;">contact</a></li>
+        <li style="float:left;display: inline-flex; color: white; text-align:center; padding: 0px; text-decoration: none;"><a href="#about" style="float:left;display: inline-flex; color: white; text-align:center; padding: 16px; text-decoration: none;">about</a></li>
+    </ul>
+    <br>
+    <br>
+    
+        <ol>
+        <li>Café</li>
+        <li>Leite</li>
+        <li>Açucar</li>
+        <li>Pasta de amedoin</li>
+    </ol>
+
+    <!--Uma lista ordenada começa com a <ol>tag. Cada item da lista começa com a <li>tag.-->
+    <ol type="1" start="10"><!--O type atributo da <ol>tag, define o tipo de marcador do item da lista. Se você quiser começar a contar a partir de um número especificado, poderá usar o start atributo.-->
+        <li>Café</li>
+        <li>Leite</li>
+        <li>Açucar</li>
+        <li>Pasta de amedoin</li>
+    </ol>
+
+    <!--Uma lista de descrição é uma lista de termos, com uma descrição de cada termo.
+    A <dl>tag define a lista de descrição, a <dt>tag define o termo (nome) e a <dd> tag 
+    descreve cada termo:-->
+    <dl>
+        <dt>Café</dt><!--dt =  description term-->
+        <dd>- Bebida preta e quente</dd> <!--descrever o termo de uma lista de  descrição-->
+        <dt>Leite</dt> <!--definir o termo de descrição-->
+        <dd>- Bebida branca e fria</dd>
+    </dl>
+
+    <!--Listas HTML aninhadas-->
+    <ol style="list-style-type: circle;">
+        <li>Café</li>
+        <li>Chá</li>
+            <ol>
+                <li>Chá Preto</li>
+                <li>Chá Verde</li>
+            </ol>
+        <li>Leite</li>
+    </ol>
+
+    
+</body>
+</html>

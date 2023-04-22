@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 17</title>
+    <link rel="stylesheet" href="style17.css">    
+    <style>
+        aside {
+    width: 30%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: right;
+    font-style: italic;
+    background-color: lightgray;
+    }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <button id="btn1" onclick="document.location='pagina_16.html'">Página Anterior</button>
+        <button id="btn2" onclick="document.location='pagina_18.html'">Próxima Página</button>
+    </nav>
+    <br>
+    <!--elementos de código de computador-->
+    <code>
+        x = 10;
+        y = 5;
+        z = x / y;
+    </code>
+
+    <!--html <kbd> para entrada de teclado-->
+        <p>salve o documento pressionando <kbd>CTRL + s</kbd></p>
+
+    <!--html <samp> para saída do programa-->
+        <p>mensagem do meu pc:</p>
+        <p><samp>arquivo não encontrado.</br>pressoine F1 para continuar</samp></p>
+
+    <!--html <code> para código de computador. O
+    <pre>elemento define o texto pré-formatado-->
+        <pre>
+            <code>
+                x=5;
+                y=10;
+                z=x+y;
+            </code>
+        </pre>
+
+    <!--html <var> para variáveis. O <var>elemento define uma variável na programação ou em uma expressão matemática-->
+        <p>a área de um triângulo é: 1/2 x <var>b</var> x <var>h</var>, onde <var>b</var> é a base, e <var>h</var> é a altura.</p>
+
+        <!--
+            O que são elementos semânticos?
+            Um elemento semântico descreve claramente seu significado tanto para o navegador quanto para o desenvolvedor.
+
+            Exemplos de elementos não semânticos : <div>e <span>- Não diz nada sobre seu conteúdo.
+
+            Exemplos de elementos semânticos : <form>, <table>, e <article>- Define claramente seu conteúdo.
+        -->
+        <img src="./Images/Elementos semânticos.png" alt="Elementos semânticos">
+        <br>
+        <a href="https://www.w3schools.com/html/html5_semantic_elements.asp">Acesse o conteúdo do w3schools.com</a>
+        <br><br>
+    
+    <!--
+        Elemento HTML <nav>
+    O <nav>elemento define um conjunto de links de navegação.
+    -->
+    <nav>
+        <a href="/html/">HTML</a> |
+        <a href="/css/">CSS</a> |
+        <a href="/js/">JavaScript</a> |
+        <a href="/jquery/">jQuery</a>
+    </nav>
+
+    <!--
+        Elemento HTML <aside>
+        O <aside>elemento define algum conteúdo além do conteúdo em que é colocado (como uma barra lateral).
+
+        O <aside>conteúdo deve estar indiretamente relacionado ao conteúdo circundante.
+    -->
+    <p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great
+        summer together with my family!</p>
+    
+    <aside>
+        <p>The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions, international
+        pavilions, award-winning fireworks and seasonal special events.
+        </p>
+    </aside>
+    <p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great
+        summer together with my family!</p>
+    <p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great
+        summer together with my family!</p>
+    <br>
+    <br>
+    <!--
+        Elementos HTML <figure> e <figcaption>
+        A <figure>tag especifica o conteúdo independente, como ilustrações, diagramas, fotos, listagens de código, etc.
+
+        A <figcaption>tag define uma legenda para um <figure>elemento. O <figcaption>elemento pode ser colocado como o primeiro ou como o último filho de um <figure>elemento.
+
+        O <img>elemento define a imagem/ilustração real. 
+    -->
+    <figure>
+        <img src="./Images/fox.png" alt="Fox" style="width:100%">
+        <figcaption>Fig. 1 - Litle fox.</figcaption>
+    </figure>
+
+
+</body>
+
+</html>

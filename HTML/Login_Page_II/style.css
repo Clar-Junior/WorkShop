@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Code', monospace;
+    
+    
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: url("./images/blue.jpg");
+    background-size: cover;
+    background-position: center;
+    
+    
+}
+/*organizar posicionamento da login-box*/
+.login-box {
+    position:relative;
+    width: 400px;
+    height: 450px;
+    background:rgb(131, 131, 32);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    backdrop-filter: blur(5px);
+    background: transparent;
+    border: 1px solid rgba(240, 248, 255, 0.500);
+
+}
+/*estilizar o texto 'login'*/
+h2 {
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    
+   
+}
+/*deifne tamanho dos campos de entrada da dados*/
+.inputBox {
+    position: relative;
+    margin: 35px 0;
+    width: 310px;
+    border-bottom: 1px solid white;
+
+}
+/*define tamanho na nas input e a labels, define cor*/
+.inputBox label {
+    margin: 35px 0;
+    position:absolute;
+    top: -100%;
+    left: 5px;
+    transform: translateY(100%);
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+/*Adiciona efeitos de transição nos campos de preenchimento email e password*/
+input:focus ~ label, input:valid ~ label{
+    transform: translateY(-2px);
+    font-size: 0.8em;
+    color: cornflowerblue;
+    
+}
+
+.inputBox input {
+    width: 87%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding:0 35px 0 5px;
+    color: rgb(255, 255, 255);
+}
+
+.inputBox ion-icon {
+    position: absolute;
+    right: 8px;
+    color: white;
+    font-size: 1.2em;
+    top: 20px;
+}
+
+.forget {
+    margin: -15px 0 15px;
+    font-size: .9em;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+.forget label input {
+    margin-right: 3px;
+}
+
+.forget label a {
+    color: white;
+    text-decoration: none;
+}
+
+/*Adicionar efeito sublinhado ao passar o mouse em 'forgot password'*/
+.forget label a:hover {
+    text-decoration: underline;
+}
+
+/*Personalizar botão 'login'*/
+button {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.register {
+    font-size: .9em;
+    color: white;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+/*Destacar o nome 'Register'*/
+.register p a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+/*Adicionar efeito sublinhado ao passar o mouse em 'Register'*/
+.register a:hover {
+    text-decoration: underline;
+}
+
+.campos-box button:hover {
+    transform: scale(0.9);
+    box-shadow: 0 0 15px #ffffffd3;
+}

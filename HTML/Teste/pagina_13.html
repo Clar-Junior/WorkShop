@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13º Página</title>
+    <link rel="stylesheet" href="style13.css" type="text/css">
+<body>
+    <div class="btn">
+    <button  id="btn1" onclick="document.location='pagina_12.html'">Página Anterior</button>
+    <button id="btn2" onclick="document.location='pagina_14.html'">Próxima Página</button>
+    </div>
+
+        
+    <h1>Web Design Responsivo</h1>
+        <p class="texto">
+            Web design responsivo é criar páginas da Web com boa aparência em todos os dispositivos!
+            <br>
+            Um web design responsivo se ajustará automaticamente para diferentes tamanhos de tela e viewports.
+        </p>
+
+    <h2>Imagens responsivas</h2>
+        <p class="texto">
+            Imagens responsivas são imagens que se adaptam bem a qualquer tamanho de navegador.
+        </p>
+        <br>
+        <h3>Usando a propriedade width</h3>
+        <p class="texto">
+                Se a propriedade CSS width estiver definida como 100%, a imagem será responsiva e dimensionada para cima e para baixo:
+        </p>
+        <img src="Images/fox.png">
+
+        <h3>Usando a propriedade max-width</h3>
+        <p class="texto">
+                Se a max-width propriedade estiver definida como 100%, a imagem será reduzida se necessário, mas nunca será ampliada para ficar maior que o tamanho original:
+        </p>
+        <img id="maxw" src="Images/white.jpg">
+
+
+        <h3>Mostrar imagens diferentes dependendo da largura do navegador</h3>
+            <p class="texto">
+                O elemento HTML -picture- permite definir diferentes imagens para diferentes tamanhos de janela do navegador.
+
+                    Redimensione a janela do navegador para ver como a imagem abaixo muda dependendo da largura:
+            </p>
+            <picture  id="pic">
+                <source srcset="Images/angry.png" media="(max-width:600px"> <!--ainda não entendi bem o media em css-->
+                <source srcset="Images/blue.jpg" media="(max-width:1000px)">
+                <source srcset="fox.png">
+                <img src="Images/angry.png" alt="angry">
+            </picture><br><br><br>
+        
+        
+
+
+
+    
+</body>
+</html>

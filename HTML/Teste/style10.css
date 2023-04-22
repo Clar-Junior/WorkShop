@@ -1,0 +1,58 @@
+body {
+    background-color: rgba(0, 0, 0, 0.800);
+    color: rgb(76, 123, 165);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*Estilizando o Header*/
+header {
+    background-color: #666;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+/*Cria 2 colunas/caixas que flutuam próximo uma a outra*/
+nav {
+    float: left;
+    width: 30%;
+    height: 300px; /*apenas para demonstração, pode ser removido*/
+    background: #ccc;
+    padding: 20px;
+}
+
+/*Estiliza a lista dentro do menu*/
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #f1f1f1;
+    height: 300px; /*apenas para demonstração, pode ser removido*/
+}
+
+/*Limpa/apaga flutuações depois das colunas*/
+footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+/*Layout responsivo - faz as 2 colunas/caixas 'pilharem' no topo uma da outra ao invés de aproximar uma da outra, em telas pequenas*/
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}
