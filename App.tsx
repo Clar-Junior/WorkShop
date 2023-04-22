@@ -76,7 +76,7 @@ function App(): JSX.Element {
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
-          <Section title="Passo 1">
+          <Section title="Passo Um">
             Edite <Text style={styles.highlight}>App.tsx</Text> para alterar essa tela e então volte para ver sua edição.
           </Section>
           <Section title="Veja as mudanças">
