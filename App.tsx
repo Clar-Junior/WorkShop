@@ -24,7 +24,7 @@ export default function App() {
           lineHeight: 18.75,
           fontWeight: '400',
         }}>
-          Sábado, 22 de abril de 2023
+          Sábado, 22 de abril de 2023.
       </Text>
     
     </View>
