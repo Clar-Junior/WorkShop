@@ -1,8 +1,29 @@
 import React from 'react';
-import {View, StyleSheet, TextInput, Text, TouchableOpacity} from 'react-native';
+import {
+  useState
+} from 'react';
+import {View, 
+  StyleSheet, 
+  TextInput, 
+  Text, 
+  TouchableOpacity
+} from 'react-native';
 
 
 export default function App() {
+  const [name, setName] = useState('');
+  const [members, setMembers] = useState<string[]>(['Junior', 'jairo']);
+
+  function handleSubmit(){
+    setMembers(parms => [name, ...parms]);
+    //faz cópia do array e adiciona novo nome
+
+    setName('');
+    //após inserção de nome, input é apagada para novo nome ser escrito
+    
+  }
+
+
   return(
     <View style={styled.container}>
 
@@ -31,12 +52,16 @@ export default function App() {
           placeholder='Nome do participante'
           placeholderTextColor={'#6B6B6B'}
           style={styled.input}
+          onChangeText={setName}
+          value={name}
         ></TextInput>
 
         <TouchableOpacity style={styled.buttonAdd}>
             <Text style={styled.labelButton}>+</Text>
         </TouchableOpacity>
       </View>
+      
+      
       
 
     </View>
