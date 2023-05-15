@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navegacao {
+    width: 100%;
+    background-color: rgb(202, 52, 51);
+    color: white;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    padding: 5px;    
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.Logo {
+    margin: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: left;
+    /*
+    site logo maker
+    https: //logo.com/?_gl=1*nwhypi*_ga*NzI5NDkyMjE1LjE2ODI4MTMxMDE.*_ga_8Y782WJ29W*MTY4MjgxMzEwMC4xLjEuMTY4MjgxNTk1OS4yOS4wLjA.
+
+    */
+    
+}
+#imgSize{
+    height: 65px;
+    margin: 0px;
+    padding: 0px;
+    
+}
+.navList {
+    margin: 0px;
+    margin-left: 0px;
+    margin-right: 20px;
+    padding: 0px;    
+    display: flex;
+    justify-content: right;
+    gap: 30px;
+    align-items: center;
+
+}
+li {
+    list-style: none;
+    display: flex;
+        
+}
+
+.imgBox {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 300px;
+    background-color: rgb(221, 122, 122);
+    
+    
+    
+}
+img {
+    position:absolute;
+    top: 38px;
+    left: 0px;
+    height: 600px;
+
+}
+
+#img1, #img2, #img3, #img4 {
+    width: 100vw;
+    
+
+}

@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container1 {
+    height: 400px;
+    width: 400px;
+    background-color: red;
+    display: flex;
+    border: 2px solid green;
+    align-items: start;
+    justify-content: center;
+        
+}
+
+ul{
+    display: flex;
+    width: 380px;
+    justify-content: space-evenly;   
+    border: 3px solid white;
+    
+}
+
+.item1 {
+    max-width: fit-content;
+    display: flex;
+    list-style: none;    
+    border: 2px solid yellow;
+    padding: 5px;
+    font-size: 28px;
+    margin: 5px;
+    
+}
+
+li {
+    color: white;
+    
+}
